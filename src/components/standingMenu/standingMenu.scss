@@ -1,0 +1,20 @@
+@import "../../extensions/styles/variables";
+@import "../../extensions/styles/fonts";
+
+.standingMenu {
+    display: flex;
+    flex-direction: column;
+    width: 261px;
+    padding: 22px 17px;
+    ul {
+        li {
+            @extend %primaryFontRegular;
+            color: $textColor;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-right: 110px;
+            line-height: 27px;
+            text-decoration: none;
+        }
+    }
+}

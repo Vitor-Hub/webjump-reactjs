@@ -1,0 +1,23 @@
+@mixin font-import($fontFamily, $fileName) {
+    @font-face {
+        font-family: $fontFamily;
+        src: url("../fonts/" + $fileName) format("woff");
+    }
+}
+
+@include font-import("Open Sans, sans-serif", "OpenSans-Regular.ttf");
+@include font-import("OpenSans ExtraBold", "OpenSans-ExtraBold.ttf");
+
+%primaryFontRegular {
+    font-family: "Open Sans, sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+%primaryFontExtraBold {
+    font-family: "OpenSans ExtraBold";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+}

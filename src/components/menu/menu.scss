@@ -1,0 +1,18 @@
+@import "../../extensions/styles/variables";
+
+.Menu {
+    background-color: $themePrimary;
+    display: flex;
+    padding: 0 100px;
+    height: 54px;
+    align-items: center;
+    a {
+        color: $white;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-right: 110px;
+        line-height: 19px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}

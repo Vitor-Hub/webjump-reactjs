@@ -1,0 +1,18 @@
+@import "../../extensions/styles/variables";
+@import "../../extensions/styles/fonts";
+
+.Banner {
+    h1 {
+        @extend %primaryFontRegular;
+        font-size: 26px;
+        line-height: 31px;
+        color: $textColor;
+    }
+
+    h4 {
+        @extend %primaryFontRegular;
+        font-size: 16px;
+        line-height: 19px;
+        color: $textColor;
+    }
+}

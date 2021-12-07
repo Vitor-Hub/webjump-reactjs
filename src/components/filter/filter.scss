@@ -1,0 +1,20 @@
+@import "../../extensions/styles/variables";
+
+.Filter {
+    border: 1px solid $borderColorLight;
+    padding: 13px 18px;
+    width: 261px;
+    margin-right: auto;
+    height: fit-content;
+    .colors {
+        .colorsContent {
+            display: flex;
+            flex-wrap: wrap;
+            .color1 {
+                width: 48px;
+                height: 24px;
+                background-color: $themePrimary;
+            }
+        }
+    }
+}

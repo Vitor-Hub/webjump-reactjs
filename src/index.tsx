@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { useState, createContext } from 'react';
 import ReactDOM from 'react-dom';
-import Home from './pages/Home';
-//import './index.scss';
+import './index.scss';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="App">
-      <Home />
-    </div>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
