@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './header.scss';
 import logo from '../../assets/logo.png';
-import { IViewContext } from '../../interfaces/interfaces';
+import { IViewContext } from '../../interfaces/IContext';
 import { PageStates, ViewContext } from '../../App';
 
 const Header = () => {

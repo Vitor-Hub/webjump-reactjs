@@ -1,4 +1,5 @@
 @import "../../extensions/styles/variables";
+@import "../../extensions/styles/fonts";
 
 .Header {
     .texts {
@@ -13,6 +14,9 @@
             color: $white;
             padding: 0 5px;
             font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            @extend %primaryFontRegular;
         }
     }
     .headerSearch {
@@ -35,7 +39,8 @@
                 border: none;
                 color: $white;
                 font-size: 16px;
-                font-weight: 600;
+                @extend %primaryFontExtraBold;
+                line-height: 19px;
             }
         }
     }

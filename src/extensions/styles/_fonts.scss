@@ -5,11 +5,12 @@
     }
 }
 
-@include font-import("Open Sans, sans-serif", "OpenSans-Regular.ttf");
+@include font-import("Open Sans", "OpenSans-Regular.ttf");
 @include font-import("OpenSans ExtraBold", "OpenSans-ExtraBold.ttf");
+@include font-import("OpenSans Bold", "OpenSans-Bold.ttf");
 
 %primaryFontRegular {
-    font-family: "Open Sans, sans-serif";
+    font-family: "Open Sans";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
@@ -19,5 +20,10 @@
     font-family: "OpenSans ExtraBold";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 700;
+}
+
+%primaryFontBold {
+    font-family: "OpenSans Bold";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

@@ -22,13 +22,15 @@ const Filter = () => {
                     <div className="color3" />
                 </div>
             </div>
-            <h1>tipo</h1>
-            <ul>
-                <li>Corrida</li>
-                <li>Caminhada</li>
-                <li>Casual</li>
-                <li>Social</li>
-            </ul>
+            <div className="type">
+                <h1>tipo</h1>
+                <ul>
+                    <li>Corrida</li>
+                    <li>Caminhada</li>
+                    <li>Casual</li>
+                    <li>Social</li>
+                </ul>
+            </div>
         </div>
     );
 }

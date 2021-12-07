@@ -1,4 +1,5 @@
 @import "../../extensions/styles/variables";
+@import "../../extensions/styles/fonts";
 
 .Filter {
     border: 1px solid $borderColorLight;
@@ -6,7 +7,45 @@
     width: 261px;
     margin-right: auto;
     height: fit-content;
+    h1 {
+        @extend %primaryFontBold;
+        color: $textColorAlt;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .categories {
+        h2 {
+            margin: 14px 0 11px 0;
+            @extend %primaryFontBold;
+            text-transform: uppercase;
+            color: $themeTerciary;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        ul {
+            padding: 11px 0 0 18px;
+            li {
+                @extend %primaryFontRegular;
+                font-size: 16px;
+                line-height: 24px;
+                color: $textColorLight;
+                &::marker {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
     .colors {
+        h1 {
+            font-size: 18px;
+            @extend %primaryFontBold;
+            text-transform: uppercase;
+            color: $themeTerciary;
+            line-height: 22px;
+            margin: 39px 0 13px;
+        }
         .colorsContent {
             display: flex;
             flex-wrap: wrap;
@@ -14,6 +53,28 @@
                 width: 48px;
                 height: 24px;
                 background-color: $themePrimary;
+            }
+        }
+    }
+    .type {
+        h1 {
+            font-size: 18px;
+            @extend %primaryFontBold;
+            text-transform: uppercase;
+            color: $themeTerciary;
+            line-height: 22px;
+            margin: 33px 0 15px;
+        }
+        ul {
+            padding: 0 0 0 18px;
+            li {
+                @extend %primaryFontRegular;
+                font-size: 16px;
+                line-height: 24px;
+                color: $textColorLight;
+                &::marker {
+                    font-size: 12px;
+                }
             }
         }
     }

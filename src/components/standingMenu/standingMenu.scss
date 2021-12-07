@@ -1,20 +1,26 @@
 @import "../../extensions/styles/variables";
 @import "../../extensions/styles/fonts";
 
-.standingMenu {
+.StandingMenu {
     display: flex;
     flex-direction: column;
     width: 261px;
-    padding: 22px 17px;
     ul {
+        margin-top: 22px;
         li {
             @extend %primaryFontRegular;
             color: $textColor;
             font-size: 18px;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin-right: 110px;
             line-height: 27px;
             text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+
+            &::marker {
+                font-size: 12px;
+            }
         }
     }
 }

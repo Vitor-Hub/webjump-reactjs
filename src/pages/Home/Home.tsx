@@ -5,7 +5,7 @@ import Menu from '../../components/menu/menu';
 import StandingMenu from '../../components/standingMenu/standingMenu';
 import Banner from '../../components/banner/banner';
 import Footer from '../../components/footer/footer';
-import { IViewContext } from '../../interfaces/interfaces';
+import { IViewContext } from '../../interfaces/IContext';
 import { ViewContext } from '../../App';
 
 const Home = () => {
