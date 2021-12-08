@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto foi gerado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Requisitos
 
-### `yarn start`
+Antes de clonar o projeto é necessário ter algumas ferramentas instaladas no computador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Baixe e instale a versão mais recente do node js no site oficial: https://nodejs.org/en/download/.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Baixe e instale a versão mais recente do Node Package Manager (npm) no site oficial: https://docs.npmjs.com/getting-started/.
+Para iniciar o projeto é necessário tanto esta aplicação, quanto a aplicação back-end.
 
-### `yarn test`
+## Iniciando o projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone a aplicação NodeJs backend em `https://bitbucket.org/webjump/assessment-frontend/`.
 
-### `yarn build`
+2. Instale os pacotes necessários com `npm install` na raíz do projeto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Execute a aplicação com `npm start`, ele irá iniciar na porta 8888.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Clone esta aplicação React e repita os passos anteriores, por padrão a aplicação irá executar na porta 3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Imagens
 
-### `yarn eject`
+A página Home é a primeira a ser vista ao iniciar a aplicação, dependendo da usa resolução será algo próximo de:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Home](assets/Home.png?raw=true "Title")
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Você pode ver mais na documentação [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
