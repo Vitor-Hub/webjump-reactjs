@@ -22,11 +22,15 @@ Para iniciar o projeto é necessário tanto esta aplicação, quanto a aplicaç�
 
 4. Clone esta aplicação React e repita os passos anteriores, por padrão a aplicação irá executar na porta 3000.
 
-##Imagens
+## Imagens
 
 A página Home é a primeira a ser vista ao iniciar a aplicação, dependendo da usa resolução será algo próximo de:
 
-![Home](assets/Home.png?raw=true "Title")
+![Home](./public/Home.png?raw=true)
+
+Ao navegar pelo menu verá a listagem de produtos:
+
+![Products](./public/Products.png?raw=true)
 
 ## Learn More
 
