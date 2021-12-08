@@ -1,7 +1,7 @@
 @import "./extensions/styles/variables";
+@import "~bootstrap/scss/bootstrap";
 
 body {
-  max-width: 1440px;
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", "Open Sans", "Open Sans Bold", sans-serif;
@@ -11,6 +11,13 @@ body {
   .App {
     .container {
       margin: 24px 100px;
+      @media only screen and (max-width: 1024px) {
+        margin: 24px 20px;
+      }
+      @media screen and (max-width: 576px) {
+        margin: 0 auto;
+        padding: 12px;
+      }
     }
   }
 }

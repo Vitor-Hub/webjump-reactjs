@@ -4,6 +4,9 @@
 .Products {
     margin: 0 auto 0 33px;
     width: 100%;
+    @media screen and (max-width: 480px) {
+        margin: 0;
+    }
     h1 {
         @extend %primaryFontRegular;
         position: relative;
@@ -11,6 +14,7 @@
         font-size: 32px;
         line-height: 38px;
         color: $textColorAlt;
+        margin-bottom: 0;
         &::after {
             content: "";
             position: absolute;
@@ -21,55 +25,168 @@
             left: 0;
         }
     }
+    .comboboxDiv {
+        display: flex;
+        justify-content: space-between;
+        margin: 12px 0 45px;
+        flex-wrap: wrap;
+        .blocks {
+            .lineBlocksIcon {
+                margin-left: 12px;
+                cursor: pointer;
+            }
+            .blocksIcon {
+                cursor: pointer;
+            }
+            @media screen and (max-width: 480px) {
+                display: none;
+            }
+        }
+        .dropdownDiv {
+            display: flex;
+            align-items: center;
+            h5 {
+                @extend %primaryFontBold;
+                font-size: 11px;
+                color: #808185;
+                line-height: 13px;
+                margin: 0 13px 0 0;
+                text-transform: uppercase;
+            }
+            .dropdown {
+                margin-right: 100px;
+                width: 216px;
+                border: 1px solid #e2dedc;
+                border-radius: 5px;
+                button {
+                    width: 216px;
+                    text-align: inherit;
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
     .items {
         display: flex;
         flex-wrap: wrap;
+        @media screen and (max-width: 480px) {
+            justify-content: center;
+        }
+        .notFound {
+            h2 {
+                @extend %primaryFontRegular;
+            }
+        }
         .item {
             width: 212px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             margin: 0 36px 20px 0;
-            &:nth-child(4n) {
-                margin-right: 0;
+            @media only screen and (max-width: 1024px) {
+                width: 168px;
+                margin: 0 16px 20px 0;
+            }
+            @media only screen and (max-width: 768px) {
+                width: 155px;
+                margin: 0px 6px 20px 0;
             }
             .img {
-                border: 1px solid $borderColorLight;
-                padding: 9px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border: 1px solid #e2dedc;
                 img {
                     width: 197px;
                     object-fit: cover;
+                    padding: 9px;
+                    @media only screen and (max-width: 1024px) {
+                        width: 135px;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        width: 125px;
+                    }
                 }
             }
-            .title {
-                @extend %primaryFontRegular;
-                text-transform: uppercase;
-                font-size: 16px;
-                margin: 8px 0 0;
-                line-height: 18px;
-                color: $textColorLight;
+            .infos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                .title {
+                    @extend %primaryFontRegular;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    margin: 8px 0 0;
+                    line-height: 18px;
+                    color: $textColorLight;
+                    text-align: center;
+                }
+                .specialPrice {
+                    display: flex;
+                    align-items: center;
+                    margin: 24px 0 9px;
+                    .price {
+                        margin: 0;
+                    }
+                    .newPrice {
+                        text-decoration: line-through;
+                        font-size: 15px;
+                        line-height: 18px;
+                        @extend %primaryFontRegular;
+                        color: #808185;
+                        text-align: center;
+                        margin: 0 16px 0 0;
+                    }
+                }
+                .price {
+                    @extend %primaryFontExtraBold;
+                    text-transform: uppercase;
+                    font-size: 21px;
+                    margin: 24px 0 9px;
+                    line-height: 25px;
+                    color: $themeTerciary;
+                    display: flex;
+                    justify-content: center;
+                }
+                button {
+                    @extend %primaryFontExtraBold;
+                    width: 210px;
+                    height: 40px;
+                    background-color: $themeSecondary;
+                    color: $white;
+                    border: none;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    line-height: 21px;
+                    cursor: pointer;
+                    @media only screen and (max-width: 1024px) {
+                        width: 164px;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        width: 140px;
+                    }
+                }
             }
-            .price {
-                @extend %primaryFontExtraBold;
-                text-transform: uppercase;
-                font-size: 21px;
-                margin: 24px 0 9px;
-                line-height: 25x;
-                color: $themeTerciary;
-            }
-            button {
-                @extend %primaryFontExtraBold;
-                width: 210px;
-                height: 40px;
-                background-color: $themeSecondary;
-                color: $white;
-                border: none;
-                font-size: 18px;
-                border-radius: 5px;
-                text-transform: uppercase;
-                line-height: 21px;
-            }
+        }
+    }
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 958px;
+        > span {
+            margin: 0 12px;
+            @extend %primaryFontRegular;
+            color: $black;
+            cursor: pointer;
+        }
+        .arrow {
+            color: $themeSecondary;
+            cursor: pointer;
+            font-weight: 600;
         }
     }
 }

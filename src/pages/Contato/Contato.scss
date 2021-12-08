@@ -1,0 +1,19 @@
+@import "../../extensions/styles/variables";
+@import "../../extensions/styles/fonts";
+
+.Contato {
+    width: 800px;
+    margin: 0 auto;
+    padding: 157px 0;
+    h1 {
+        @extend %primaryFontBold;
+    }
+    h2,
+    h3 {
+        @extend %primaryFontRegular;
+    }
+    .email h2,
+    .telefone h2 {
+        color: $themePrimary;
+    }
+}

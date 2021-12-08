@@ -7,9 +7,12 @@
             width: 261px;
             background-color: $borderColorLight;
             margin-right: 25px;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
         }
         .item2 {
-            width: 954px;
+            max-width: 954px;
         }
     }
 }

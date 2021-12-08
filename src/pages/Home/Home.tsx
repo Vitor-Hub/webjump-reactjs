@@ -5,20 +5,25 @@ import Menu from '../../components/menu/menu';
 import StandingMenu from '../../components/standingMenu/standingMenu';
 import Banner from '../../components/banner/banner';
 import Footer from '../../components/footer/footer';
-import { IViewContext } from '../../interfaces/IContext';
-import { ViewContext } from '../../App';
+import { IContextData } from '../../interfaces/IContext';
+import { ContextData } from '../../App';
 
-const Home = () => {
+interface IHome {
+    setCurrentCategory: (category: string) => void;
+}
 
-    const { setCurrentView } = useContext<IViewContext>(ViewContext);
+const Home = (props: IHome) => {
+    const { setCurrentCategory } = props;
+
+    const { setCurrentView } = useContext<IContextData>(ContextData);
 
     return (
         <>
             <Header />
-            <Menu />
+            <Menu setCurrentCategory={setCurrentCategory} />
             <div className="Home">
                 <div className="container">
-                    <div className="item1"><StandingMenu /></div>
+                    <div className="item1"><StandingMenu  setCurrentCategory={setCurrentCategory} /></div>
                     <div className="item2"><Banner /></div>
                 </div>
             </div>

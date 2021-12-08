@@ -9,6 +9,10 @@
         justify-content: flex-end;
         height: 31px;
         background-color: $black;
+        @media screen and (max-width: 354px) {
+            padding-right: 0;
+            justify-content: center;
+        }
         a,
         span {
             color: $white;
@@ -23,6 +27,16 @@
         display: flex;
         justify-content: space-between;
         margin: 30px 92px;
+        flex-wrap: wrap;
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+        @media only screen and (max-width: 822px) {
+            margin: 30px 20px;
+        }
+        > img {
+            cursor: pointer;
+        }
         .search {
             display: flex;
             align-items: center;
@@ -30,6 +44,10 @@
                 width: 414px;
                 height: 40px;
                 border: 1px solid $borderColor;
+                outline: 0;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
             }
             button {
                 width: 110px;
@@ -41,6 +59,7 @@
                 font-size: 16px;
                 @extend %primaryFontExtraBold;
                 line-height: 19px;
+                cursor: pointer;
             }
         }
     }

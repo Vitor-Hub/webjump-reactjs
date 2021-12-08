@@ -1,0 +1,18 @@
+@import "../../extensions/styles/variables";
+@import "../../extensions/styles/fonts";
+
+.Breadcrumb {
+    display: flex;
+    margin: 24px 100px;
+    padding: 0 12px;
+    h5 {
+        @extend %primaryFontRegular;
+        font-size: 14px;
+        line-height: 17px;
+        color: $themeSecondary;
+    }
+    .bread {
+        margin-left: 2px;
+        color: $themePrimary;
+    }
+}

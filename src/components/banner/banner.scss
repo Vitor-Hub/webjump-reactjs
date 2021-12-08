@@ -2,6 +2,9 @@
 @import "../../extensions/styles/fonts";
 
 .Banner {
+    img {
+        width: 100%;
+    }
     h1 {
         @extend %primaryFontRegular;
         font-size: 26px;

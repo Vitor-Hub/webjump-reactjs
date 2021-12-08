@@ -1,5 +1,9 @@
 .Shopping {
     .container {
         display: flex;
+        @media screen and (max-width: 480px) {
+            flex-wrap: wrap;
+            margin-right: initial;
+        }
     }
 }

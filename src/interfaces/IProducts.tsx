@@ -1,13 +1,13 @@
 export interface IProductCategories {
     items: {
-        id: number,
+        id?: number,
         name: string,
-        path: string
-    }[];
+        path: string,
+    }[]
 }
 
 export interface IProducts {
-    filters: [{}];
+    filters: {}[];
     items: {
         id: number,
         sku: string,
@@ -15,6 +15,7 @@ export interface IProducts {
         name: string,
         image: string,
         price: number,
-        filter: [{}]
+        specialPrice?: number,
+        filter: [{ color: string }]
     }[];
 }
