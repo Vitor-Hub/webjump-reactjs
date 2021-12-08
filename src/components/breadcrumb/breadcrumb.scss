@@ -3,8 +3,9 @@
 
 .Breadcrumb {
     display: flex;
-    margin: 24px 100px;
+    margin: 24px auto;
     padding: 0 12px;
+    max-width: 1260px;
     h5 {
         @extend %primaryFontRegular;
         font-size: 14px;
